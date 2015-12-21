@@ -13,21 +13,18 @@ import com.google.devtools.simple.runtime.events.EventDispatcher;
 
 public class FirstAppActivity extends Form implements HandlesEventDispatching {
 
-	// Java Bridge version of FinalStartApp from CMP111
+	// Minimal Android app built with the Java Bridge
 	//   Coded by Brian Capouch
-	//   Project begun 19 December 2015
+	//   Project begun 21 December 2015
 	
 	// We begin with constants, and "global settings" variables
 	// -- This app has none for now
 	
-	// Next are the UI widget references
-	
+	// Next are the UI widget references	
 	// These objects are equivalent to "components" of App Inventor
 
-
-	// Next the main components
-	private Button onlyButton;
-	
+	// Only two for this simple demo
+	private Button onlyButton;	
 	private Label onlyLabel;
 
 // Java Bridger apps all use $define() in place of main()
