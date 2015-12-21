@@ -29,23 +29,23 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 
 // Java Bridger apps all use $define() in place of main()
 void $define() {
-	
 
 	// Code in this block is equivalent to the "Designer" part of App Inventor
   
-   this.BackgroundColor(COLOR_WHITE);
+	this.BackgroundColor(COLOR_WHITE);
    
-   // Create our button
-   onlyButton = new Button(this);
-   onlyButton.Text("Please push me!!");
+	// Create our button
+	onlyButton = new Button(this);
+	onlyButton.Text("Please push me!!");
 
-   // And our only label
-   onlyLabel = new Label(this);
+	// And our only label
+
+	onlyLabel = new Label(this);
    
    
-   // Let the runtime system know which events to report to the dispatcher
-   EventDispatcher.registerEventForDelegation(this, "ButtonClick", "Click");
-  
+	// Let the runtime system know which events to report to the dispatcher
+	EventDispatcher.registerEventForDelegation(this, "ButtonClick", "Click");
+ 
 } // end $define()
 
 // This method, known as a "callback" is invoked by the runtime system
