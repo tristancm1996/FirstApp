@@ -30,9 +30,9 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 // Java Bridger apps all use $define() in place of main()
 void $define() {
 	
+
 	// Code in this block is equivalent to the "Designer" part of App Inventor
   
-	 // "this" is an Activity object, or the "main screen"
    this.BackgroundColor(COLOR_WHITE);
    
    // Create our button
