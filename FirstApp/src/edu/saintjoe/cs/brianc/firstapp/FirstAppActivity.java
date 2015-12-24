@@ -60,7 +60,8 @@ public boolean dispatchEvent(Component component, String id, String eventName,
 	        return true;
 	     } // 
 	    
-	// This line is syntactically required
-  return true;
-	} // end dispatchEvent
+
+	    // This line is syntactically required  
+	    return true;
+} // end dispatchEvent
 }
