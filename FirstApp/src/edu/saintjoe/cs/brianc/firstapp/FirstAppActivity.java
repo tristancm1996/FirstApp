@@ -1,15 +1,15 @@
 package edu.saintjoe.cs.brianc.firstapp;
 
 //Import directives tell Eclipse which components you intend to use
-import com.google.devtools.simple.runtime.components.Component;
-import com.google.devtools.simple.runtime.components.HandlesEventDispatching;
-import com.google.devtools.simple.runtime.components.android.Button;
-import com.google.devtools.simple.runtime.components.android.Form;
-import com.google.devtools.simple.runtime.components.android.Label;
-import com.google.devtools.simple.runtime.components.android.HorizontalArrangement;
-import com.google.devtools.simple.runtime.components.android.TextBox;
+import com.google.appinventor.components.runtime.Component;
+import com.google.appinventor.components.runtime.HandlesEventDispatching;
+import com.google.appinventor.components.runtime.Button;
+import com.google.appinventor.components.runtime.Form;
+import com.google.appinventor.components.runtime.Label;
+import com.google.appinventor.components.runtime.HorizontalArrangement;
+import com.google.appinventor.components.runtime.TextBox;
 
-import com.google.devtools.simple.runtime.events.EventDispatcher;
+import com.google.appinventor.components.runtime.EventDispatcher;
 
 public class FirstAppActivity extends Form implements HandlesEventDispatching {
 
@@ -28,7 +28,7 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	private Label onlyLabel;
 
 // Java Bridger apps all use $define() in place of main()
-void $define() {
+protected void $define() {
 
 	// Code in this block is equivalent to the "Designer" part of App Inventor
   
