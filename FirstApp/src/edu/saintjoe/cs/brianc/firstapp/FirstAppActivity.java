@@ -14,9 +14,8 @@ import com.google.appinventor.components.runtime.EventDispatcher;
 public class FirstAppActivity extends Form implements HandlesEventDispatching {
 
 	// Minimal Android app built with the Java Bridge
-	// This is a new comment I am going to put into my code
-	//   Coded by Brian Capouch
 	//   Project begun 21 December 2015
+	//   Brought before CMP112 on 27 January 2016
 	
 	// We begin with constants, and "global settings" variables
 	// -- This app has none for now
