@@ -5,7 +5,9 @@ import com.google.appinventor.components.runtime.Component;
 import com.google.appinventor.components.runtime.HandlesEventDispatching;
 import com.google.appinventor.components.runtime.Form;
 
-// One line here for each TYPE of componment you intend to use 
+// One line here for each TYPE of componment you intend to use
+
+// Import buttons so I can use them
 import com.google.appinventor.components.runtime.Button;
 import com.google.appinventor.components.runtime.Label;
 
@@ -25,6 +27,8 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	// These objects are equivalent to "components" of App Inventor
 
 	// Only two for this simple demo
+	
+	// Declare our button
 	private Button onlyButton;	
 	private Label onlyLabel;
 
@@ -35,7 +39,7 @@ protected void $define() {
   
 	this.BackgroundColor(COLOR_WHITE);
    
-	// Create our button
+	// Define our button
 	onlyButton = new Button(this);
 	onlyButton.Text("Please push me!!");
 
