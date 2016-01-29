@@ -41,7 +41,7 @@ protected void $define() {
    
 	// Define our button
 	onlyButton = new Button(this);
-	onlyButton.Text("Please push me!!");
+	onlyButton.Text("Make my life complete");
 
 	// And our only label
 
@@ -61,7 +61,7 @@ public boolean dispatchEvent(Component component, String id, String eventName,
 	
 	// This code is equivalent to the "Blocks" part of App Inventor
 	    if (component.equals(onlyButton) && eventName.equals("Click")){
-	    	onlyLabel.Text("OUCH!!");
+	    	onlyLabel.Text("Ahhhhhhhhhhh. . . . ");
 	        return true;
 	     } // 
 	    
