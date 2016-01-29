@@ -1,14 +1,15 @@
 package edu.saintjoe.cs.brianc.firstapp;
 
-//Import directives tell Eclipse which components you intend to use
+// Include these lines every time; they're needed by every ap
 import com.google.appinventor.components.runtime.Component;
 import com.google.appinventor.components.runtime.HandlesEventDispatching;
-import com.google.appinventor.components.runtime.Button;
 import com.google.appinventor.components.runtime.Form;
-import com.google.appinventor.components.runtime.Label;
-import com.google.appinventor.components.runtime.HorizontalArrangement;
-import com.google.appinventor.components.runtime.TextBox;
 
+// One line here for each TYPE of componment you intend to use 
+import com.google.appinventor.components.runtime.Button;
+import com.google.appinventor.components.runtime.Label;
+
+// This line needs to be in every app
 import com.google.appinventor.components.runtime.EventDispatcher;
 
 public class FirstAppActivity extends Form implements HandlesEventDispatching {
