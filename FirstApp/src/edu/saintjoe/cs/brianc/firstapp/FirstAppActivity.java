@@ -29,7 +29,8 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	// Only two for this simple demo
 	
 	// Declare our button
-	private Button onlyButton;	
+	private Button onlyButton;
+	private Button clearButton;
 	private Label onlyLabel;
 
 // Java Bridger apps all use $define() in place of main()
@@ -43,6 +44,9 @@ protected void $define() {
 	onlyButton = new Button(this);
 	onlyButton.Text("Make my life complete");
 
+	// Clear the label when pressed
+	clearButton = new Button(this);
+	clearButton.Text("Clear label");
 	// And our only label
 
 	onlyLabel = new Label(this);
@@ -65,6 +69,10 @@ public boolean dispatchEvent(Component component, String id, String eventName,
 	        return true;
 	     } // 
 	    
+	    if (component.equals(clearButton) && eventName.equals("Click")){
+	    	onlyLabel.Text("");
+	        return true;
+	     } // 
 
 	    // This line is syntactically required  
 	    return true;
