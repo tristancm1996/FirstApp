@@ -10,6 +10,8 @@ import com.google.appinventor.components.runtime.Form;
 // Import buttons so I can use them
 import com.google.appinventor.components.runtime.Button;
 import com.google.appinventor.components.runtime.Label;
+import com.google.appinventor.components.runtime.HorizontalArrangement;
+
 
 // This line needs to be in every app
 import com.google.appinventor.components.runtime.EventDispatcher;
@@ -32,6 +34,8 @@ public class FirstAppActivity extends Form implements HandlesEventDispatching {
 	private Button onlyButton;
 	private Button clearButton;
 	private Label onlyLabel;
+	private HorizontalArrangement top; 
+	
 
 // Java Bridger apps all use $define() in place of main()
 protected void $define() {
@@ -39,13 +43,15 @@ protected void $define() {
 	// Code in this block is equivalent to the "Designer" part of App Inventor
   
 	this.BackgroundColor(COLOR_WHITE);
-   
+	 
+   //Create horizontal arrangement
+	top = new HorizontalArrangement(this);
 	// Define our button
-	onlyButton = new Button(this);
+	onlyButton = new Button(top);
 	onlyButton.Text("Make my life complete");
 
 	// Clear the label when pressed
-	clearButton = new Button(this);
+	clearButton = new Button(top);
 	clearButton.Text("Clear label");
 	// And our only label
 
